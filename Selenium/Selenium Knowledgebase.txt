@@ -1,0 +1,11 @@
+to find xpath:
+firebug
+Firepath
+xpath checker
+
+to interact with windows
+AutoIt tool
+
+To add JARS
+Go to project - > BuildPath -> Config Build path -> Add external JARS
+
