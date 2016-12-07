@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Akura Test Suite]">
+  <test name="Akura test(failed)">
+    <classes>
+      <class name="futureAkura.Smoke001">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- futureAkura.Smoke001 -->
+      <class name="futureAkura.Smoke002_3_4">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- futureAkura.Smoke002_3_4 -->
+    </classes>
+  </test> <!-- Akura test(failed) -->
+</suite> <!-- Failed suite [Akura Test Suite] -->

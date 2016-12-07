@@ -1,0 +1,60 @@
+TEST NG
+---------
+It is a framework.
+
+this is the most popular test framework. Others are JUnit and NUnit.
+Annotations in TestNG
+---------------------
+
+@Test -
+it is a test case. (to denote a test case we use this)
+When u r using TestNG we dont need main method
+
+@Before Test
+Pre-conditions
+
+@ After Test
+Post-conditions
+
+@BeforeSuite
+Pre-conditions for the test suite
+
+@AfterSuite
+Post-conditions for the test suite
+@After
+
+
+the order is :
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterMethod
+@AfterClass
+@AfterTest
+@AfterSuite
+
+if you have multiple tests, then methods will executed for each test.
+e.g.
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+
+@BeforeMethod
+@Test
+@AfterMethod
+
+@BeforeMethod
+@Test
+@AfterMethod
+
+@AfterClass
+@AfterTest
+@AfterSuite
+
+
+
+Assertions
+----------
+We use assertions in TestNG for verifications

@@ -1,0 +1,9 @@
+=========================================================================================================================
+
+System.setProperty("webdriver.ie.driver", "C:/Users/USER/Downloads/IEDriverServer_x64_2.44.0/IEDriverServer.exe");
+driver = new InternetExplorerDriver();
+
+=========================================================================================================================
+
+System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+WebDriver driver = new ChromeDriver();

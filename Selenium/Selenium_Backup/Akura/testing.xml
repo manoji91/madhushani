@@ -1,0 +1,21 @@
+
+<suite name = "Akura Test Suite" >
+<test name = "Akura test">
+<classes>
+<class name ="futureAkura.Smoke001"></class>
+<class name ="futureAkura.Smoke002_3_4"></class>
+</classes>
+</test>
+</suite>
+
+<!-- &lt;suite name="AkuraSmokeTestSuite" &gt; -->
+	<!--&lt;test name="Akura" &gt;  --> 
+ 	 	<!-- &lt;classes&gt; &lt;class name="futureAkura.TestNG" /&gt; -->
+  		<!-- &lt;classes&gt; &lt;class name="futureAkura.Akura1" /&gt; -->
+  		<!--  &lt;/classes&gt; -->
+ 	<!--  &lt;/test&gt; -->
+<!--&lt;/suite&gt;  -->
+ 
+
+ 
+ 

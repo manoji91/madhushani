@@ -1,0 +1,17 @@
+//Switch Between frames/iframes
+
+driver.switchTo().frame(driver.findElement(By.xpath("//iframe[contains(@src,'FUN_UnitList_FilterByLevelIndexOne')]"));
+
+//to switchto a frame:
+
+driver.switchTo.frame("Frame_ID");
+
+//to switch to the default again.
+
+driver.switchTo().defaultContent();
+
+//You can also use:
+
+driver.switch_to.frame(0);
+
+//(0) being the first iframe on the html.
