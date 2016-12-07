@@ -1,0 +1,140 @@
+﻿1. Power Options
+============================================================================
+Suspend
+	sudo pm-suspend
+
+Shutdown
+	sudo poweroff
+
+Restart
+	sudo reboot
+
+Logoff
+	gnome-session-quit
+
+
+2. Install/Update Packages
+============================================================================
+Update Single Package
+	apt-get --only-upgrade install packagename
+
+Install a deb file
+	sudo dpkg -i packagename.deb
+
+Install a tar.gz (or tar.bz2) file
+	./configure
+	make
+	sudo make install
+	(go to the folder it is located and type the above commands)
+
+Install a bin file
+	
+
+Ubuntu make install location
+	./configure --prefix=/opt/local
+	make
+	sudo make install
+	(default prefix is "/usr/local"; however, you can change it as above)
+
+Remove a package
+	sudo dpkg -r packagename
+
+Unisntall Software
+	apt-get remove packagename
+	(will remove the binaries, but not the configuration or data files of the package packagename.)
+
+	apt-get purge packagename
+	apt-get remove --purge packagename
+	(will remove about everything regarding the package packagename,
+	Particularly useful when you want to 'start all over' with an application because you messed up the 		configuration.)
+
+Run all Updates
+	apt-get update && apt-get upgrade
+
+sudo apt-get autoremove
+	(remove packages that were automatically installed to satisfy dependencies for some package and that are no 		more needed.)
+
+Prevent updating of a package
+	sudo apt-mark hold package_name
+
+
+3. File/Folder Management
+===========================================================================
+Copy File
+
+Create a directory
+	mkdir
+
+Change folder permissions & ownership
+	sudo chown -R username:usergroup directory
+	sudo chown -R username directory
+	(R for recursive)
+
+
+4. Package Management
+============================================================================
+Installed package Version
+	packagename –version
+
+Find Dependancies of a package
+	apt-cache depends packagename
+	apt-rdepends packagename
+
+Details about a package
+	aptitude show packagename
+
+Check whether a package is installed or not
+	dpkg -l packagename
+
+See Where a Package is Installed
+	dpkg -L packagename
+
+
+
+*** Other***
+============================================================================
+See the Desktop Environment
+	echo $DESKTOP_SESSION
+
+Check if the Ubuntu repos have the software you are looking for
+	apt-cache search <packages-name>
+
+Find RAM model and details
+	sudo lshw -short -C memory
+
+Show Command history
+	history
+
+System program problem detected
+	sudo rm /var/crash/*
+	(this Removes old crash-reports)
+
+Data Usage
+	vnstat
+	vnstat -d
+	vnstat -m
+
+Task Manager
+	top
+	htop
+
+Clear Terminal
+	ctrl+L
+
+Stop the process run in terminal
+	ctrl+C
+
+Access Permission
+	chmod
+
+Firefox screenshots
+	screenshot filename.png --fullpage
+
+
+Clean packages
+	sudo apt-get autoremove
+	sudo apt-get clean
+	sudo apt-get autoclean
+
+
+
